@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SibTech, Inc.</title>
+    <link type="text/css" rel="stylesheet" href="/style/default.css"></link>
+    <script type="text/javascript">
+       
+      startList = function() {
+        if (document.all&&document.getElementById) {
+          navRoot = document.getElementById("menu");
+          for (i=0; i<navRoot.childNodes.length; i++) {
+            node = navRoot.childNodes[i];
+            if (node.nodeName=="LI") {
+              node.onmouseover=function() {
+                this.className+=" over";
+              }
+              node.onmouseout=function() {
+                this.className=this.className.replace(" over", "");
+              }
+            }
+          }
+        }
+      }
+      window.onload=startList;
+       
+    </script>
+  </head>
+  <body>
+    <h1 id="title">SibTech, Inc.</h1>
+    <div id="shell">
+      <div id="head">
+        <ul id="menu">
+          <li><a href="/about" >About Us</a></li>
+          <li><a href="/science" class="dropdown">Our Science</a>
+            <ul>
+              <li><a href="/platform" >Technology Platform</a></li>
+              <li><a href="/publications" >Recent Publications</a></li>
+              <li><a href="/posters" >Recent Posters</a></li>
+            </ul>
+          </li>
+          <li><a href="/products" >Products</a></li>
+          <li><a href="/conjugates" >Custom Conjugates</a></li>
+          <li><a href="/licensing" >Licensing</a></li>
+          <li><a href="/contact" >Contact Us</a></li>
+        </ul>
+        <div id="foot">
+          <h2><a name="#">Technology Platform: Making Protein Work</a></h2>
+          <p>The majority of biopharmaceutical proteins are used &quot;as is&quot;. However, the use of existing and emerging biopharmaceutical proteins can be greatly expanded, if they are derivatized with useful payloads. The resulting conjugates can be used for targeted delivery of therapeutic and diagnostic agents, development of protein-derivatized biomedical surfaces and scaffolds, and for optimization of protein formulation and pharmacokinetic.</p>
+
+<p>Unfortunately, the progress in this field has been very slow. The fundamental problem has been the lack of an efficient technology for making protein-based conjugates. Most often conjugation relies on a random chemical cross-linking of a payload directly to a protein. Such process yields a mixture of products with varying activity, biodistribution, and pharmacokinetic. Alternatively, a cysteine residue is engineered into a &quot;safe&quot; position in the protein and its thiol group is used for site-specific cross-linking. However, the latter approach requires sophisticated protein engineering that is customized for every protein.</p>
+
+<p>To expand the use of biopharmaceutical proteins, SibTech developed a platform technology for site-specific payload conjugation. In our approach, a protein is expressed with N- or C-terminal Cys-tag, a 15-aa, cysteine-containing fusion tag, whose unique thiol group is used for conjugation (Fig. 1). Cys-tag (KESCAKKFQRQHMDS) is a fragment of human RNase I with single amino acid substitution, and therefore it is not expected to be particularly immunogenic in humans. Remarkably, Cys-tag does not interfere with recombinant protein refolding and formation of native disulfide bonds.</p>
+
+<div id="labeled_image_1">
+
+<img src="/images/delivery/uniform-conjugates-fig1.gif" alt="Figure 1"/>
+
+<div class="img_label">
+
+<b>Figure 1. Cys-tagged Proteins for Multiple Applications.</b> Site-specific conjugation via Cys-tag creates new uniform protein-based products.
+</div>
+
+<p></div></p>
+
+<p><p style="clear: both;">
+Once Cys-tagged protein is expressed, it can be used for conjugation of a variety of payloads. To date, we have expressed a number of recombinant proteins with either N- or C-terminal Cys-tag. These proteins were derivatized with payloads as diverse as radionuclide chelators for <i>in vivo</i> imaging (Blankenberg et al., 2006, <a href="http://www.nature.com/nm/journal/v13/n4/abs/nm1522.html">Backer et al., 2007a</a>), high capacity drug carriers, such as nanoparticles, dendrimers (Backer et al, 2005), liposomes (Thirumamagal et al., 2006, Backer et al., 2007b), fibronectin for derivatization of biomedical surfaces (Backer et al., 2006a), or polyethylenglycol and lipids for improving pharmacokinetic and formulation. In majority of cases, conjugates retained functional activity.</p>
+
+<p>For &quot;difficult&quot; payloads, which inhibit protein activity when attached directly to Cys-tag, SibTech developed a &quot;Dock &amp; Lock&quot; system based on a complimentary humanized adapter protein (Fig. 2). Adapter protein is designed to bind to Cys-tag and then the complex is &quot;locked&quot; via a disulfide bond formed between complimentary cysteine residues in Cys-tag and adapter (Backer et al., 2006b). Thus, when necessary, a payload is conjugated to adapter and then this conjugate is  &quot;Docked &amp; Locked&quot; to any protein expressed with Cys-tag (Fig. 2).</p>
+
+<div id="labeled_image_2">
+
+<img src="/images/delivery/conjugates-via-adapter-fig2.gif" alt="Figure 2"/>
+<div class="img_label">
+<b>Figure 2. Self-Assembled Conjugates of Cys-tagged Proteins.</b> Pre-made adapter-payload conjugate is &quot;docked and locked&quot; to Cys-tagged protein.
+
+</div>
+
+<p><p style="clear: both;">
+We are confident that the majority of existing and emerging biopharmaceutical proteins can be readily expressed with Cys-tag, derivatized with payloads, and tested in vitro and in vivo to establish feasibility of new applications. We look forward to working with industrial and academic groups that are interested in expanding the use of their proteins (see, <a href="/conjugates">Custom Conjugates</a>).</p>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

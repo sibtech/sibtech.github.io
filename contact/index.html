@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SibTech, Inc.</title>
+    <link type="text/css" rel="stylesheet" href="/style/default.css"></link>
+    <script type="text/javascript">
+       
+      startList = function() {
+        if (document.all&&document.getElementById) {
+          navRoot = document.getElementById("menu");
+          for (i=0; i<navRoot.childNodes.length; i++) {
+            node = navRoot.childNodes[i];
+            if (node.nodeName=="LI") {
+              node.onmouseover=function() {
+                this.className+=" over";
+              }
+              node.onmouseout=function() {
+                this.className=this.className.replace(" over", "");
+              }
+            }
+          }
+        }
+      }
+      window.onload=startList;
+       
+    </script>
+  </head>
+  <body>
+    <h1 id="title">SibTech, Inc.</h1>
+    <div id="shell">
+      <div id="head">
+        <ul id="menu">
+          <li><a href="/about" >About Us</a></li>
+          <li><a href="/science" class="dropdown">Our Science</a>
+            <ul>
+              <li><a href="/platform" >Technology Platform</a></li>
+              <li><a href="/publications" >Recent Publications</a></li>
+              <li><a href="/posters" >Recent Posters</a></li>
+            </ul>
+          </li>
+          <li><a href="/products" >Products</a></li>
+          <li><a href="/conjugates" >Custom Conjugates</a></li>
+          <li><a href="/licensing" >Licensing</a></li>
+          <li><a href="/contact" >Contact Us</a></li>
+        </ul>
+        <div id="foot">
+          <h2><a name="#">Contact Information</a></h2>
+          <p>For more information, please contact:</p>
+
+<p>Dr. Joseph M. Backer<br/>
+Chief Executive Officer<br/>
+SibTech, Inc.<br/>
+115A Commerce dr.<br/>
+Brookfield, CT 06804<br/>
+Phone: +1 203-775-5677<br/>
+Fax: +1 203-775-5705<br/>
+E-mail: <a href="mailto:jbacker@sibtech.com">jbacker@sibtech.com</a></p>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SibTech, Inc.</title>
+    <link type="text/css" rel="stylesheet" href="/style/default.css"></link>
+    <script type="text/javascript">
+       
+      startList = function() {
+        if (document.all&&document.getElementById) {
+          navRoot = document.getElementById("menu");
+          for (i=0; i<navRoot.childNodes.length; i++) {
+            node = navRoot.childNodes[i];
+            if (node.nodeName=="LI") {
+              node.onmouseover=function() {
+                this.className+=" over";
+              }
+              node.onmouseout=function() {
+                this.className=this.className.replace(" over", "");
+              }
+            }
+          }
+        }
+      }
+      window.onload=startList;
+       
+    </script>
+  </head>
+  <body>
+    <h1 id="title">SibTech, Inc.</h1>
+    <div id="shell">
+      <div id="head">
+        <ul id="menu">
+          <li><a href="/about" >About Us</a></li>
+          <li><a href="/science" class="dropdown">Our Science</a>
+            <ul>
+              <li><a href="/platform" >Technology Platform</a></li>
+              <li><a href="/publications" >Recent Publications</a></li>
+              <li><a href="/posters" >Recent Posters</a></li>
+            </ul>
+          </li>
+          <li><a href="/products" >Products</a></li>
+          <li><a href="/conjugates" >Custom Conjugates</a></li>
+          <li><a href="/licensing" >Licensing</a></li>
+          <li><a href="/contact" >Contact Us</a></li>
+        </ul>
+        <div id="foot">
+          <h2><a name="#">About Us</a></h2>
+          <p>The focus of our company is optimization of biopharmaceutical proteins for multiple applications, such as targeted drug delivery, targeted imaging, and derivatization of biomedical surfaces. Our work is based on a platform technology for converting proteins into a format suitable for site-specific conjugation of various payloads. For this, proteins are expressed with a fusion Cys-tag, a 15-aa cysteine-containing peptide, whose thiol group is used for site-specific modifications. Our experience with different Cys-tagged proteins and very diverse payloads suggests that virtually every protein can be Cys-tagged and made to carry a payload without loss of functional activity. Thus, our approach allows rapid development of new applications for existing and emerging biopharmaceutical proteins, as well as modifying them for superior pharmacokinetic and formulation.</p>
+
+<p>To date, our technology yielded the first candidate for clinical development, a proprietary Cys-tagged single-chain vascular endothelial growth factor (scVEGF) derivatized with a contrast agent for PET imaging of VEGF receptors. These receptors play a pivotal role in tumor angiogenesis and their inhibition is the major goal of anti-angiogenic therapies. We believe that imaging VEGF receptors in tumor vasculature can provide crucial information for early diagnostics, development and monitoring therapeutic regimens, and rational patient selection for complex and very expensive treatments. Currently, there are no contrast agents for imaging VEGF receptors and our lead candidate is being developed to satisfy this unmet need.</p>
+
+<p>SibTech is currently looking for business partnerships and scientific collaboration with industrial and academic groups seeking to expand the use of existing and emerging biopharmaceutical proteins.</p>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

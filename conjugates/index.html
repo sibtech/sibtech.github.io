@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SibTech, Inc.</title>
+    <link type="text/css" rel="stylesheet" href="/style/default.css"></link>
+    <script type="text/javascript">
+       
+      startList = function() {
+        if (document.all&&document.getElementById) {
+          navRoot = document.getElementById("menu");
+          for (i=0; i<navRoot.childNodes.length; i++) {
+            node = navRoot.childNodes[i];
+            if (node.nodeName=="LI") {
+              node.onmouseover=function() {
+                this.className+=" over";
+              }
+              node.onmouseout=function() {
+                this.className=this.className.replace(" over", "");
+              }
+            }
+          }
+        }
+      }
+      window.onload=startList;
+       
+    </script>
+  </head>
+  <body>
+    <h1 id="title">SibTech, Inc.</h1>
+    <div id="shell">
+      <div id="head">
+        <ul id="menu">
+          <li><a href="/about" >About Us</a></li>
+          <li><a href="/science" class="dropdown">Our Science</a>
+            <ul>
+              <li><a href="/platform" >Technology Platform</a></li>
+              <li><a href="/publications" >Recent Publications</a></li>
+              <li><a href="/posters" >Recent Posters</a></li>
+            </ul>
+          </li>
+          <li><a href="/products" >Products</a></li>
+          <li><a href="/conjugates" >Custom Conjugates</a></li>
+          <li><a href="/licensing" >Licensing</a></li>
+          <li><a href="/contact" >Contact Us</a></li>
+        </ul>
+        <div id="foot">
+          <h2><a name="#">Optimization of Proteins for Multiple Applications</a></h2>
+          <p>SibTech provides Custom Protein Optimization Service, which is rapid, flexible, and comprehensive. It includes the following stages:</p>
+
+<ol id="cp_optimization_stages">
+<li>Your protein is re-engineered for expression with N- or C-terminal Cys-tag.</li>
+<li>Cys-tagged protein is expressed, refolded, purified, and tested for functional activities in vitro.</li>
+<li>A payload you need is site-specifically conjugated to Cys-tagged protein. We are confident in our ability to conjugate virtually any payload. Our menu of standard payloads includes:
+    <ol id="standard_payloads">
+    <li>Fluorescent dyes for in vivo and in vitro targeted imaging</li>
+    <li>Radionuclide chelator for SPECT targeted imaging</li>
+    <li>Radionuclide chelator for PET targeted imaging</li>
+    <li>Lipids for formulation into liposomes or other lipid-based formulations</li>
+    <li>PEG for extending clearance time</li>
+    <li>Other proteins, such as those used in tissue scaffold, implant, or biosensors engineering</li>
+    </ol>
+</li>
+<li>Conjugates are purified and tested for functional activities in vitro.</li>
+<li>If necessary, adapter-based conjugates are made for self-assembly with your Cys-tagged protein.</li>
+</ol>
+
+<p>In our experience, a new conjugate can be made and validated <i>in vitro</i> in 2 to 4 months. At that point you would have a powerful R&amp;D tool, for example, for targeted imaging. The new conjugate is then evaluated <i>in vivo</i>, for a rational decision regarding development of your protein for new clinical application(s).</p>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
